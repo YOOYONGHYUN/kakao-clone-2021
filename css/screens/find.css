@@ -1,0 +1,150 @@
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-icons__icon span {
+  margin-top: 25px;
+}
+
+.recommended-friends {
+  margin: 30px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 20px 0px;
+  color: var(--main-color);
+}
+
+.recommended-friends__no {
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 35px;
+}
+
+.open-chat__header span {
+  opacity: 0.6;
+}
+
+.bts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--main-border);
+  padding-bottom: 20px;
+}
+
+.bts2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bts-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.bts-title__1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.bts-title__2 {
+  margin-top: 6px;
+  color: var(--main-color);
+}
+
+.bts-title__avatar {
+  margin-top: 5px;
+  display: flex;
+
+  align-items: center;
+}
+
+.bts-title__avatar img {
+  max-width: 30px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.bts-title__avatar__1 {
+  color: var(--main-color);
+}
+
+.bts-title__avatar .divider {
+  width: 2px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0px 5px;
+}
+
+.bts-title__avatar__2 {
+  color: violet;
+  font-weight: 600;
+}
+
+.bts-title__icon img {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+}
+
+.bts-title__icon {
+  position: relative;
+}
+
+.bts-title__icon__sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  padding: 5px;
+  width: 60px;
+  position: absolute;
+  bottom: 8px;
+  left: 45px;
+  font-size: 16px;
+}
+
+.bts-title__icon__sub i {
+  margin-right: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.bts-title__icon__sub i {
+  animation: heartBeat 1s linear infinite;
+}
